@@ -1,11 +1,9 @@
-# AI-Powered Healthy Food Delivery System Presentation
+# HealthyBite - AI-Powered Personalized Meal Planning Platform
 
-A 10-slide web presentation for Team 36's capstone project.
+A 10-slide neo-brutalistic web presentation for Karthik's capstone project.
 
-## Team Members
+## Author
 - Karthik
-- Viplav
-- Harsha
 
 ## How to View
 
@@ -17,28 +15,44 @@ A 10-slide web presentation for Team 36's capstone project.
    - **Home** - First slide
    - **End** - Last slide
 
-## Design
-- Neo-brutalism style
-- Black and white color scheme
-- Bold typography and borders
-- Minimal, clean layout
+## Design Features
+- **Neo-brutalism style** - Bold, minimal, and clean
+- **Black and white color scheme** - High contrast for clarity
+- **Live slide counter** - Top right corner shows current/total slides
+- **No scrolling** - Content optimized to fit on each slide
+- **Bold typography and borders** - Easy to read and present
 
 ## Slides
 
-1. **Title** - Project introduction and team
-2. **The Problem** - Current challenges in healthy eating
-3. **Our Solution** - How AI solves these problems
-4. **What It Does** - Key features of the system
-5. **How We Built It** - Technology stack
-6. **Progress So Far** - Current achievements
-7. **What's Next** - Future development plans
-8. **Why It Matters** - Benefits and impact
-9. **In Summary** - Conclusion
-10. **Thank You** - Final slide
+1. **Title Slide** - HealthyBite introduction and project overview
+2. **The Problem** - Challenges in modern nutrition and meal planning
+3. **The Solution** - HealthyBite's AI-powered approach
+4. **Technology Stack** - Modern full-stack architecture (Next.js 15, TypeScript, Gemini AI)
+5. **System Architecture** - User journey flow from auth to payment
+6. **AI Integration** - Google Gemini 1.5 Flash capabilities and error handling
+7. **Key Features** - MVP feature set with 8 core functionalities
+8. **Technical Achievements** - Code quality, performance, and development practices
+9. **Future Roadmap** - Three-phase enhancement plan
+10. **Conclusion** - Project summary, learnings, and impact
+
+## Project Overview
+
+**HealthyBite** is an AI-powered personalized meal planning platform that:
+- Uses Google Gemini AI for intelligent meal recommendations
+- Collects 12+ health data points for personalization
+- Provides subscription-based meal delivery service
+- Includes BMI tracking and nutritional insights
+- Built with Next.js 15, TypeScript, and Tailwind CSS
 
 ## Technologies Used
 - HTML5
-- CSS3
-- JavaScript
+- CSS3 (Neo-brutalistic design)
+- JavaScript (ES6+)
+- No build tools or frameworks required - just open and present!
 
-No build tools or frameworks required - just open and present!
+## Key Features
+- Live slide counter in top right corner
+- Smooth slide transitions
+- Fully responsive design
+- Keyboard navigation support
+- Content optimized to avoid scrolling
