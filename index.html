@@ -3,212 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy Food Delivery System - Team 36</title>
+    <title>HealthyBite - AI-Powered Personalized Meal Planning</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="presentation">
-        <!-- Slide 1: Title -->
+        <!-- Slide Counter -->
+        <div class="slide-counter">
+            <span id="current-slide">1</span>/<span id="total-slides">10</span>
+        </div>
+
+        <!-- Slide 1: Title Slide -->
         <section class="slide active" data-slide="1">
-            <div class="content-wrapper">
-                <h1 class="giant-title">AI-POWERED<br>HEALTHY FOOD<br>DELIVERY</h1>
-                <div class="team-box">
-                    <p class="team-label">TEAM 36</p>
-                    <div class="team-names">
-                        <span>KARTHIK</span>
-                        <span>VIPLAV</span>
-                        <span>HARSHA</span>
-                    </div>
+            <div class="content-wrapper center">
+                <h1 class="giant-title">HEALTHYBITE</h1>
+                <div class="subtitle-box">
+                    <p class="subtitle">AI-Powered Personalized Meal Planning Platform</p>
                 </div>
+                <div class="team-box">
+                    <p class="team-label">CAPSTONE PROJECT</p>
+                    <p class="author">KARTHIK</p>
+                </div>
+                <div class="tagline">A modern solution for personalized nutrition and healthy living</div>
             </div>
-            <div class="slide-number">01</div>
         </section>
 
-        <!-- Slide 2: Problem Statement -->
+        <!-- Slide 2: The Problem -->
         <section class="slide" data-slide="2">
             <div class="content-wrapper">
                 <h2 class="section-title">THE PROBLEM</h2>
+                <div class="subtitle-bar">Challenges in Modern Nutrition</div>
                 <div class="content-box">
-                    <p class="main-text">Most people struggle to eat healthy in today's busy world.</p>
-                    <p class="main-text">Current food delivery apps focus on speed, not nutrition.</p>
-                    <p class="main-text">There's no smart system that adapts to your health needs automatically.</p>
-                    <p class="main-text">Planning healthy meals takes too much time and effort.</p>
+                    <p class="main-text">People struggle to plan meals that align with their health goals</p>
+                    <p class="main-text">One-size-fits-all diet plans don't work for individual needs</p>
+                    <p class="main-text">Lack of personalization for allergies, dietary preferences, and lifestyle</p>
+                    <p class="main-text">Time-consuming to calculate nutrition and track health metrics</p>
+                </div>
+                <div class="highlight-box">
+                    <p><strong>THE GAP:</strong> Need for intelligent, personalized meal planning that adapts to individual health profiles</p>
                 </div>
             </div>
-            <div class="slide-number">02</div>
         </section>
 
-        <!-- Slide 3: Our Solution -->
+        <!-- Slide 3: The Solution -->
         <section class="slide" data-slide="3">
             <div class="content-wrapper">
-                <h2 class="section-title">OUR SOLUTION</h2>
-                <div class="content-box">
-                    <p class="main-text">An intelligent food delivery system that learns from you.</p>
-                    <p class="main-text">Uses AI to recommend meals based on your health goals.</p>
-                    <p class="main-text">Automatically plans and schedules your meals.</p>
-                    <p class="main-text">Tracks your progress and adjusts recommendations over time.</p>
+                <h2 class="section-title">THE SOLUTION</h2>
+                <div class="subtitle-bar">HealthyBite: Your AI Nutrition Partner</div>
+                <div class="feature-grid-simple">
+                    <div class="feature-simple">
+                        <div class="icon">●</div>
+                        <p>Personalized meal recommendations powered by Google Gemini AI</p>
+                    </div>
+                    <div class="feature-simple">
+                        <div class="icon">●</div>
+                        <p>Comprehensive health profiling with 12+ data points</p>
+                    </div>
+                    <div class="feature-simple">
+                        <div class="icon">●</div>
+                        <p>Subscription-based meal delivery service</p>
+                    </div>
+                    <div class="feature-simple">
+                        <div class="icon">●</div>
+                        <p>Smart nutritional insights with BMI tracking</p>
+                    </div>
+                </div>
+                <div class="highlight-box">
+                    <p><strong>TARGET USERS:</strong> Health-conscious individuals, fitness enthusiasts, people with dietary restrictions</p>
                 </div>
             </div>
-            <div class="slide-number">03</div>
         </section>
 
-        <!-- Slide 4: What It Does -->
+        <!-- Slide 4: Technology Stack -->
         <section class="slide" data-slide="4">
             <div class="content-wrapper">
-                <h2 class="section-title">WHAT IT DOES</h2>
-                <div class="feature-grid">
-                    <div class="feature-item">
-                        <div class="feature-number">01</div>
-                        <p>Creates a personalized health profile for you</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-number">02</div>
-                        <p>Suggests meals that match your goals</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-number">03</div>
-                        <p>Schedules deliveries automatically</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-number">04</div>
-                        <p>Tracks calories and BMI</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-number">05</div>
-                        <p>Sends helpful reminders</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-number">06</div>
-                        <p>Provides nutrition tips</p>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-number">04</div>
-        </section>
-
-        <!-- Slide 5: How We Built It -->
-        <section class="slide" data-slide="5">
-            <div class="content-wrapper">
-                <h2 class="section-title">HOW WE BUILT IT</h2>
+                <h2 class="section-title">TECHNOLOGY STACK</h2>
+                <div class="subtitle-bar">Modern Full-Stack Architecture</div>
                 <div class="tech-stack">
                     <div class="tech-row">
-                        <span class="tech-label">MOBILE APP</span>
-                        <span class="tech-value">React Native</span>
+                        <span class="tech-label">FRONTEND</span>
+                        <span class="tech-value">Next.js 15 + TypeScript + Tailwind CSS</span>
                     </div>
                     <div class="tech-row">
-                        <span class="tech-label">SERVER</span>
-                        <span class="tech-value">Node.js + Express</span>
+                        <span class="tech-label">BACKEND & AI</span>
+                        <span class="tech-value">Next.js API Routes + Google Gemini 1.5</span>
                     </div>
                     <div class="tech-row">
-                        <span class="tech-label">DATABASE</span>
-                        <span class="tech-value">Firebase</span>
+                        <span class="tech-label">FEATURES</span>
+                        <span class="tech-value">Dark/Light Theme + Mobile-First</span>
                     </div>
                     <div class="tech-row">
-                        <span class="tech-label">AI ENGINE</span>
-                        <span class="tech-value">Python + Flask</span>
-                    </div>
-                    <div class="tech-row">
-                        <span class="tech-label">HOSTING</span>
-                        <span class="tech-value">Cloud Services</span>
+                        <span class="tech-label">DEPLOYMENT</span>
+                        <span class="tech-value">Vercel Optimized</span>
                     </div>
                 </div>
             </div>
-            <div class="slide-number">05</div>
         </section>
 
-        <!-- Slide 6: Current Progress -->
+        <!-- Slide 5: System Architecture -->
+        <section class="slide" data-slide="5">
+            <div class="content-wrapper">
+                <h2 class="section-title">SYSTEM ARCHITECTURE</h2>
+                <div class="subtitle-bar">User Journey Flow</div>
+                <div class="flow-container">
+                    <div class="flow-item">
+                        <div class="flow-number">01</div>
+                        <div class="flow-content">
+                            <h3>Authentication</h3>
+                            <p>Register/Login with mock system</p>
+                        </div>
+                    </div>
+                    <div class="flow-item">
+                        <div class="flow-number">02</div>
+                        <div class="flow-content">
+                            <h3>Health Questionnaire</h3>
+                            <p>12-input multi-step form (4 stages)</p>
+                        </div>
+                    </div>
+                    <div class="flow-item">
+                        <div class="flow-number">03</div>
+                        <div class="flow-content">
+                            <h3>AI Processing</h3>
+                            <p>Gemini analyzes user profile</p>
+                        </div>
+                    </div>
+                    <div class="flow-item">
+                        <div class="flow-number">04</div>
+                        <div class="flow-content">
+                            <h3>Recommendations</h3>
+                            <p>5 personalized meals with nutrition</p>
+                        </div>
+                    </div>
+                    <div class="flow-item">
+                        <div class="flow-number">05</div>
+                        <div class="flow-content">
+                            <h3>Subscription</h3>
+                            <p>Choose plan (Weekly/Monthly/Quarterly)</p>
+                        </div>
+                    </div>
+                    <div class="flow-item">
+                        <div class="flow-number">06</div>
+                        <div class="flow-content">
+                            <h3>Payment</h3>
+                            <p>Secure checkout flow</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: AI Integration -->
         <section class="slide" data-slide="6">
             <div class="content-wrapper">
-                <h2 class="section-title">PROGRESS SO FAR</h2>
-                <div class="progress-list">
-                    <div class="progress-item done">
-                        <span class="status">✓</span>
-                        <span>Backend server setup complete</span>
+                <h2 class="section-title">AI INTEGRATION</h2>
+                <div class="subtitle-bar">Google Gemini 1.5 Flash - The Core Innovation</div>
+                <div class="two-column">
+                    <div class="column">
+                        <h3 class="column-title">CAPABILITIES</h3>
+                        <div class="list-box">
+                            <p>● Generates personalized meal suggestions based on health profile</p>
+                            <p>● Provides complete nutritional breakdown (calories, protein, carbs, fats)</p>
+                            <p>● Explains reasoning behind each recommendation</p>
+                            <p>● Delivers tailored health tips and nutritional strategy</p>
+                        </div>
                     </div>
-                    <div class="progress-item done">
-                        <span class="status">✓</span>
-                        <span>Firebase database connected</span>
-                    </div>
-                    <div class="progress-item done">
-                        <span class="status">✓</span>
-                        <span>Mobile app interface designed</span>
-                    </div>
-                    <div class="progress-item ongoing">
-                        <span class="status">→</span>
-                        <span>AI recommendation system in development</span>
-                    </div>
-                    <div class="progress-item ongoing">
-                        <span class="status">→</span>
-                        <span>Testing meal suggestions with sample data</span>
+                    <div class="column">
+                        <h3 class="column-title">ROBUST ERROR HANDLING</h3>
+                        <div class="list-box">
+                            <p>● Custom fallback engine with 12 pre-configured meals</p>
+                            <p>● Rule-based filtering (dietary preferences, allergies, goals)</p>
+                            <p>● 100% uptime guarantee with dual-engine approach</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="slide-number">06</div>
         </section>
 
-        <!-- Slide 7: Next Steps -->
+        <!-- Slide 7: Key Features -->
         <section class="slide" data-slide="7">
             <div class="content-wrapper">
-                <h2 class="section-title">WHAT'S NEXT</h2>
-                <div class="content-box">
-                    <p class="main-text">Add chatbot for meal reminders and tips.</p>
-                    <p class="main-text">Run user testing to improve the experience.</p>
-                    <p class="main-text">Refine AI recommendations based on feedback.</p>
-                    <p class="main-text">Launch the first version to real users.</p>
+                <h2 class="section-title">KEY FEATURES</h2>
+                <div class="subtitle-bar">MVP Feature Set</div>
+                <div class="checklist">
+                    <div class="check-item">
+                        <span class="check">✓</span>
+                        <div class="check-content">
+                            <strong>User Authentication</strong> - Registration, login, password recovery
+                        </div>
+                    </div>
+                    <div class="check-item">
+                        <span class="check">✓</span>
+                        <div class="check-content">
+                            <strong>Health Profiling</strong> - Comprehensive 12-input questionnaire
+                        </div>
+                    </div>
+                    <div class="check-item">
+                        <span class="check">✓</span>
+                        <div class="check-content">
+                            <strong>AI Recommendations</strong> - Gemini-powered meal suggestions
+                        </div>
+                    </div>
+                    <div class="check-item">
+                        <span class="check">✓</span>
+                        <div class="check-content">
+                            <strong>BMI Calculator</strong> - Automatic health insights
+                        </div>
+                    </div>
+                    <div class="check-item">
+                        <span class="check">✓</span>
+                        <div class="check-content">
+                            <strong>Subscription Plans</strong> - 3-tier pricing (Weekly, Monthly, Quarterly)
+                        </div>
+                    </div>
+                    <div class="check-item">
+                        <span class="check">✓</span>
+                        <div class="check-content">
+                            <strong>Payment Flow</strong> - Mock payment system (Stripe-ready)
+                        </div>
+                    </div>
+                    <div class="check-item">
+                        <span class="check">✓</span>
+                        <div class="check-content">
+                            <strong>Responsive UI</strong> - Mobile-first design with dark mode
+                        </div>
+                    </div>
+                    <div class="check-item">
+                        <span class="check">✓</span>
+                        <div class="check-content">
+                            <strong>Testing Suite</strong> - Comprehensive API verification scripts
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="slide-number">07</div>
         </section>
 
-        <!-- Slide 8: Benefits -->
+        <!-- Slide 8: Technical Achievements -->
         <section class="slide" data-slide="8">
             <div class="content-wrapper">
-                <h2 class="section-title">WHY IT MATTERS</h2>
-                <div class="benefit-boxes">
-                    <div class="benefit-box">
-                        <h3>SAVES TIME</h3>
-                        <p>No more meal planning stress</p>
+                <h2 class="section-title">TECHNICAL ACHIEVEMENTS</h2>
+                <div class="subtitle-bar">Project Highlights</div>
+                <div class="achievement-grid">
+                    <div class="achievement-box">
+                        <h3>CODE QUALITY</h3>
+                        <p>~1,500 lines of TypeScript/TSX</p>
+                        <p>Type-safe implementation throughout</p>
+                        <p>Component-based architecture</p>
                     </div>
-                    <div class="benefit-box">
-                        <h3>HEALTHIER LIFE</h3>
-                        <p>Better eating habits made easy</p>
+                    <div class="achievement-box">
+                        <h3>PERFORMANCE</h3>
+                        <p>Server-side rendering with Next.js 15</p>
+                        <p>Optimized API routes</p>
+                        <p>Client-side state management</p>
                     </div>
-                    <div class="benefit-box">
-                        <h3>PERSONALIZED</h3>
-                        <p>Tailored to your unique needs</p>
-                    </div>
-                    <div class="benefit-box">
-                        <h3>SMART TRACKING</h3>
-                        <p>See your progress over time</p>
+                    <div class="achievement-box">
+                        <h3>DEVELOPMENT PRACTICES</h3>
+                        <p>Version control with Git</p>
+                        <p>Comprehensive testing and verification</p>
+                        <p>Documentation-driven development</p>
+                        <p>Modular, maintainable codebase</p>
                     </div>
                 </div>
             </div>
-            <div class="slide-number">08</div>
         </section>
 
-        <!-- Slide 9: Conclusion -->
+        <!-- Slide 9: Future Enhancements -->
         <section class="slide" data-slide="9">
             <div class="content-wrapper">
-                <h2 class="section-title">IN SUMMARY</h2>
-                <div class="content-box">
-                    <p class="main-text large">We're building a smart food delivery system that makes healthy eating automatic.</p>
-                    <p class="main-text large">It combines AI, nutrition science, and convenience into one simple app.</p>
-                    <p class="main-text large">Our goal is to help people live healthier lives without the hassle.</p>
+                <h2 class="section-title">FUTURE ROADMAP</h2>
+                <div class="roadmap">
+                    <div class="phase">
+                        <h3 class="phase-title">PHASE 1 - BACKEND</h3>
+                        <p>● PostgreSQL/MongoDB database integration</p>
+                        <p>● JWT-based authentication</p>
+                        <p>● Real payment gateway (Stripe/Razorpay)</p>
+                    </div>
+                    <div class="phase">
+                        <h3 class="phase-title">PHASE 2 - FEATURES</h3>
+                        <p>● User dashboard with order tracking</p>
+                        <p>● Meal customization and swapping</p>
+                        <p>● Weekly meal calendar view</p>
+                        <p>● Email notifications and reminders</p>
+                    </div>
+                    <div class="phase">
+                        <h3 class="phase-title">PHASE 3 - SCALE</h3>
+                        <p>● Admin panel for meal management</p>
+                        <p>● Analytics and user insights</p>
+                        <p>● Mobile app (React Native)</p>
+                        <p>● Multi-language support</p>
+                    </div>
                 </div>
             </div>
-            <div class="slide-number">09</div>
         </section>
 
-        <!-- Slide 10: Thank You -->
+        <!-- Slide 10: Conclusion -->
         <section class="slide" data-slide="10">
             <div class="content-wrapper center">
-                <h1 class="giant-title">THANK YOU</h1>
-                <div class="final-note">
-                    <p>TEAM 36</p>
-                    <p>KARTHIK • VIPLAV • HARSHA</p>
+                <h2 class="section-title">PROJECT SUMMARY</h2>
+                <div class="summary-grid">
+                    <div class="summary-box">
+                        <h3>WHAT WE BUILT</h3>
+                        <p>Production-ready MVP demonstrating full-stack + AI capabilities</p>
+                        <p>Intelligent meal planning system with personalized recommendations</p>
+                        <p>Modern, accessible, and responsive user experience</p>
+                    </div>
+                    <div class="summary-box">
+                        <h3>KEY LEARNINGS</h3>
+                        <p>AI/LLM integration in real-world applications</p>
+                        <p>Building robust systems with fallback mechanisms</p>
+                        <p>Next.js 15 App Router and modern React patterns</p>
+                        <p>End-to-end product development</p>
+                    </div>
                 </div>
+                <div class="impact-box">
+                    <p><strong>IMPACT:</strong> HealthyBite showcases how AI can solve real health and nutrition challenges</p>
+                </div>
+                <h1 class="giant-title-small">THANK YOU</h1>
+                <p class="questions">Questions & Demo</p>
             </div>
-            <div class="slide-number">10</div>
         </section>
     </div>
 

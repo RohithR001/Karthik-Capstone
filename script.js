@@ -4,12 +4,19 @@ class Presentation {
         this.slides = document.querySelectorAll('.slide');
         this.currentSlide = 0;
         this.totalSlides = this.slides.length;
+        this.currentSlideElement = document.getElementById('current-slide');
+        this.totalSlidesElement = document.getElementById('total-slides');
         this.init();
     }
 
     init() {
         // Set up keyboard navigation
         document.addEventListener('keydown', (e) => this.handleKeyPress(e));
+
+        // Update total slides counter
+        if (this.totalSlidesElement) {
+            this.totalSlidesElement.textContent = this.totalSlides;
+        }
 
         // Show first slide
         this.showSlide(0);
@@ -49,6 +56,15 @@ class Presentation {
         if (this.slides[index]) {
             this.slides[index].classList.add('active');
             this.currentSlide = index;
+
+            // Update slide counter
+            this.updateCounter();
+        }
+    }
+
+    updateCounter() {
+        if (this.currentSlideElement) {
+            this.currentSlideElement.textContent = this.currentSlide + 1;
         }
     }
 
