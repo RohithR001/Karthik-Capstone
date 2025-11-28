@@ -23,17 +23,40 @@ class Presentation {
     }
 
     handleKeyPress(event) {
+        const activeSlide = this.slides[this.currentSlide];
+
         switch(event.key) {
             case 'ArrowRight':
-            case 'ArrowDown':
             case ' ': // Spacebar
                 event.preventDefault();
                 this.nextSlide();
                 break;
             case 'ArrowLeft':
-            case 'ArrowUp':
                 event.preventDefault();
                 this.prevSlide();
+                break;
+            case 'ArrowDown':
+                // Check if slide is scrollable and not at bottom
+                const isAtBottom = activeSlide &&
+                    Math.abs(activeSlide.scrollHeight - activeSlide.scrollTop - activeSlide.clientHeight) < 1;
+
+                if (isAtBottom || !activeSlide || activeSlide.scrollHeight <= activeSlide.clientHeight) {
+                    // If at bottom or no overflow, go to next slide
+                    event.preventDefault();
+                    this.nextSlide();
+                }
+                // Otherwise, allow default scroll behavior
+                break;
+            case 'ArrowUp':
+                // Check if slide is scrollable and not at top
+                const isAtTop = activeSlide && activeSlide.scrollTop < 1;
+
+                if (isAtTop || !activeSlide || activeSlide.scrollHeight <= activeSlide.clientHeight) {
+                    // If at top or no overflow, go to previous slide
+                    event.preventDefault();
+                    this.prevSlide();
+                }
+                // Otherwise, allow default scroll behavior
                 break;
             case 'Home':
                 event.preventDefault();
@@ -56,6 +79,9 @@ class Presentation {
         if (this.slides[index]) {
             this.slides[index].classList.add('active');
             this.currentSlide = index;
+
+            // Reset scroll position to top
+            this.slides[index].scrollTop = 0;
 
             // Update slide counter
             this.updateCounter();

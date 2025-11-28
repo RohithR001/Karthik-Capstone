@@ -42,6 +42,9 @@ body {
     padding: 50px 60px;
     border: 12px solid #000000;
     background: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .slide.active {
@@ -51,13 +54,14 @@ body {
 }
 
 .content-wrapper {
-    flex: 1;
+    flex: 0 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 1300px;
     margin: 0 auto;
     width: 100%;
+    min-height: min-content;
 }
 
 .content-wrapper.center {
